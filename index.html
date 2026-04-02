@@ -43,7 +43,7 @@
                 -webkit-text-fill-color: transparent;
             }
 
-            button {
+            .buttontest {
                 font-family: '8bitoperator';
                 background: linear-gradient(180deg, #7c7c7c, #434343);
                 -webkit-text-fill-color: rgb(85, 255, 232);
@@ -51,6 +51,17 @@
                 border-radius: 5px;
                 line-height: 35px;
                 text-align: center;
+            }
+
+            .dialogomuestrea {
+                font-family: '8bitoperator';
+                -webkit-text-fill-color: white;
+                background: linear-gradient(180deg, #7c7c7c, #434343);
+            }
+
+            .subbutton {
+                font-family: '8bitoperator';
+                -webkit-text-fill-color: rgb(255, 85, 85);
             }
             
         </style>
@@ -60,7 +71,10 @@
         <h2>Hice este pixel art para añadirlo asi pruebo como son las imágenes en html y ver como orientarlas, lo cual hasta ahora llega a ser un poco confuso</h2>
 
         <button command="show-modal" commandfor="my-custom-message" class="buttontest" name = "testy" type="button">si queres presiona este boton</button>
-        <dialog id="my-custom-message" class="dialogtest" >parece que me viste xd</dialog>
+        <dialog id="my-custom-message" class="dialogomuestrea" >
+            parece que me viste xd
+            <button class = "subbutton" command = "close" commandfor = "my-custom-message">clic para cerrar</button>
+        </dialog>
     </body>
 
 </html>
